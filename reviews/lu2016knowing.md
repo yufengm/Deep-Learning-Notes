@@ -7,7 +7,6 @@ Jiasen Lu, Caiming Xiong, Devi Parikh, Richard Socher, ArXiv, 2016
 This paper introduces an adaptive attention based image captioning model. They extended the standard LSTM module with a visual sentinel, which encodes what the whole model already knows. Based on the sentinel, an attention module was attached to learn when to attend to the image feature when generating the captions.
 
 - Model
-  - Encoder-Decoder for Image Captioning: 
-  ``
-  $\theta^* $
-  ``
+  - Encoder-Decoder for Image Captioning: ordered conditionals with chain rule; unnormalized log probability with LSTM embedding; 
+  - Two kinds of image context encoding: frozen CNN with the last fully connected layer; context is based on both encoder CNN and the decoder RNN with the attention-based framework
+  - Spatial Attention Model: 
