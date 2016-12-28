@@ -1,4 +1,4 @@
-Summary of Papers on deep learning
+Summary of Papers on Deep Learning
 
 2017
 
