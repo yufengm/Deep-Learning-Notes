@@ -8,4 +8,6 @@ This paper introduces an adaptive attention based image captioning model. They e
 
 - Model
   - Encoder-Decoder for Image Captioning: 
-  ```\theta^* ```
+  ```math
+  \theta^* 
+  ```
