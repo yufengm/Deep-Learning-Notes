@@ -14,3 +14,6 @@ Review of Deep Learning Book
   - Chain rule and Backpropagation
   - Dynamic programming for backpropagation in order to avoid repeating subexpression computing
   - Reverse and forward mode accumulation, Krylov methods
+
+- Chapter 7: Regulariation for Deep Learning
+  -
