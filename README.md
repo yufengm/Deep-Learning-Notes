@@ -15,3 +15,10 @@ Review of Deep Learning Book
   - Dynamic programming for backpropagation in order to avoid repeating subexpression computing
   - Reverse and forward mode accumulation, Krylov methods
 - Chapter 7: Regularization for Deep Learning
+  - L^2 regularization analysis of eigenvalues of Hessian matrix to cost function J: high eigenvalue with high curvature of function -> high change of gradient -> weight decay along this direction will affect little;
+  - L^1 norm results in sparsity which can be interpreted as feature selection;
+  - Constrained optimization with reprojection, which can help prevent numerical overflow if the weights continue to increase; it is also recommended by Hinton that in this way we can enable rapid exploration of parameter space given high learning rate;
+  - Underdetermined problems like X^TX is not invertible for linear regression: regularization can be employed here;
+  - Data augmentation is particularly effective for object recognition; injecting noise into input or hidden units is also helpful provided that noise magnitude is carefully tuned;
+  - Besides adding noise to input, weight noise can also be manipulated: Bayesian inference or stability of function; label smoothing with injecting noise at the output targets;
+  - Semi-supervised learning: combine -log P(X) and -log P(Y|X); multitask learning with shared representation;
