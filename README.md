@@ -20,5 +20,5 @@ Review of Deep Learning Book
   - Constrained optimization with reprojection, which can help prevent numerical overflow if the weights continue to increase; it is also recommended by Hinton that in this way we can enable rapid exploration of parameter space given high learning rate;
   - Underdetermined problems like X^TX is not invertible for linear regression: regularization can be employed here;
   - Data augmentation is particularly effective for object recognition; injecting noise into input or hidden units is also helpful provided that noise magnitude is carefully tuned;
-  - Besides adding noise to input, weight noise can also be manipulated: Bayesian inference or stability of function; label smoothing with injecting noise at the output targets;
+  - Besides adding noise to input, weight noise can also be manipulated: Bayesian inference or stability of function; label smoothing with injecting noise at the output targets; (not quite understand small eta part with an additional regularization term)
   - Semi-supervised learning: combine -log P(X) and -log P(Y|X); multitask learning with shared representation;
