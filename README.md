@@ -22,3 +22,9 @@ Review of Deep Learning Book
   - Data augmentation is particularly effective for object recognition; injecting noise into input or hidden units is also helpful provided that noise magnitude is carefully tuned;
   - Besides adding noise to input, weight noise can also be manipulated: Bayesian inference or stability of function; label smoothing with injecting noise at the output targets; (not quite understand small eta part with an additional regularization term)
   - Semi-supervised learning: combine -log P(X) and -log P(Y|X); multitask learning with shared representation;
+  - Early stopping: limiting the searching of parameter space - alpha = 1 / ( tau * epsilon )
+  - Parameter sharing: CNN or Tying: regularize parameter of one model to be close to another
+  - Place sparse representation on hidden units besides L1 for feature selection like parameter restrictions;
+  - Bagging and boosting techniques: Dropout as a bagging strategy - \sum p(\mu)p(y|x, \mu) [it may be more preferable to use geometric mean as compared with arithmetic mean here]; Exact inference when no nonlinear hidden units exists - see the example with softmax regression;
+  - Adversarial Training: due to excessive linearity; with adversarial examples to train NN to resist local perturbation.
+  - Tangent Prop vs Data augmentation - Double backprop vs Adversarial training
