@@ -1,0 +1,11 @@
+Chapter 8 - Optimization for Training Deep Models
+- Might be using indirect loss function as compared to pure optimization problem;
+- Minibatch is selected randomly! In multiple epoch training, after the first pass, estimates become biased; However, in practice, the additional epoches usually provide enough benefit as compared to the harm it brings;
+- Chanllenges in NN optimization: ill-conditioning; multiple local minima corresponding to modl identifiability; plateaus, saddle points and flat regions-saddle points are more often using the n-coin toss case; Second-oder methods not so popular may due to this saddle point problem like in Newton's methods; Cliffs or very large gradients; long term dependency like in RNN which may cause vanishing or exploding gradient problem; Inexact gradients; Local structure may not indicate the global structure as shown in figure 8.4; 
+- SGD: pay attention to learning rate episolon_k; computation per update is constant; rate of convergence is O(1/sqrt(k)) for SGD but O(1/k) for BGD;
+- Momemtum: accumulates an decaying moving average of previous gradients, offset the oscillation not pointing to the minimum; 1/(1-alpha) can treated as the step size when convergence reached; we may think of it as a particle subject to continuous-time Newtonian dynamics with gradient being the velosity;
+- Nesterov Momentum: using the gradient with "correctly updated" parameter value;
+- Parameter initialization: Breaking symmetry between hidden units; weights usually sampled from Gaussian or Uniform; Larger initial weights may yield stronger symmetry-breaking effect; In terms of regularization, initilization may treated differently, they encurage smaller ones as final result stay in regions near the initial parameters; 
+- However, optimal criteria for initial weights often do not lead to optimal performance: wrong criteria; properties not persist; just improving the speed;
+- If computation power allowed, initialization can be treated as hyperparameter searching with one minibatch;
+- Mostly, bias is set to zero except: a bias is an output unit which can be set to its marginal statistics; to avoid too much saturation; functioned as a gate;
