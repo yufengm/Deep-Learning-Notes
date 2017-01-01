@@ -9,3 +9,15 @@ Chapter 8 - Optimization for Training Deep Models
 - However, optimal criteria for initial weights often do not lead to optimal performance: wrong criteria; properties not persist; just improving the speed;
 - If computation power allowed, initialization can be treated as hyperparameter searching with one minibatch;
 - Mostly, bias is set to zero except: a bias is an output unit which can be set to its marginal statistics; to avoid too much saturation; functioned as a gate;
+- Adaptive Learning Rates
+  - AdaGrad: larger partial derivative corresponds to rapid decrease of learning rate;
+  - RMSProp: exponentially decaying average to discard history from extreme past;
+  - Adam: adaptive momemtum combining both momentum and RMSProp;
+- Second-order Methods
+  - Newton's Method: adding alpha along diagnal of Hessian to ensure Positive Definite;
+  - Conjugate Gradients: d_t^T H d_{t-1} = 0 to solve the best beta_t which satisfiest d_t = g + beta_t d_{t-1}
+  - BFGS: approximate H^{-1} with a matrix M_t - theta_{t+1} = theta_t + epsilon * Mt g_t;
+- Batch Normalization: SGD is under the assumption that other parameters are constant while updating W_i. However in deep models this hardly holds. apply affine transformation on top of BN to keep the learning power; Apply BN on WX as X is less ammenable and more non-Gaussian;
+- Coordinate Descent; Polyak Averaging - Theta_t = alpha Theta_{t-1} + (1-alpha)Theta_t;
+- Supervised pretraing: finetuning; transfer learning; FitNets using pretraining to guide the target network's hidden layer;
+- Continuation Methods and Curriculum Learning;
