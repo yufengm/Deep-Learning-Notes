@@ -1,2 +1,11 @@
 Chapter 9 - Convolutional Networks
-- Convolution operation: commutative when kernel are flipped; cross-correlation implementation in practical without flipping; 
+- Convolution operation: commutative when kernel are flipped; cross-correlation implementation in practical without flipping; treated as matrix mulitiplaction - Toeplitz matrix (univariate); doubly block circulant matrix (2D);
+- Motivations under CNN: sparse interaction; parameter sharing and equivariant representation;
+- Pooling: if pooled over several features under some kind of transformation, this make it invariant to this kind of transformation like in Figure 9.9; 
+- Convolution and Pooling as an infinite strong prior: the weights for one hidden unit must be identical to the weights of its neighbor; also the weights should be zero except for an small spatial receptive field; it can cause underfitting if the prior is not reasonably accurate
+- Variants of Convolution operation: basic one; with stride one; zero padding(valid, same, full); locally connected layer(unshared convolution); tiled convolution; 
+  - if the features learned by LCL and TCL are ones under some version of transformations, together with max-pooling, it can become invariant to the learned transformation;
+- Matrix transpose as a useful operation in backpropagation
+- CNN can also help to output structured object like pixel wise mask for segmentation(structured output); it can also deal with input of variable size;
+- Separable kernel can help make convolution operation faster by decompose it into d separate 1-d kernel;
+- Reduce the cost of CNN training: initialize randomly; design by hand; with unsupervised criterion;
