@@ -12,3 +12,4 @@ Review of Deep Learning Book
 - Chapter 6: Deep Forward Networks [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch6.md)]
 - Chapter 7: Regularization for Deep Learning [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch7.md)]
 - Chapter 8: Optimization for Training Deep Models [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch8.md)]
+- Chapter 9: Convolutional Networks [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch9.md)]
