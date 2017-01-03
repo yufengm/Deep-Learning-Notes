@@ -9,3 +9,11 @@ Chapter 9 - Convolutional Networks
 - CNN can also help to output structured object like pixel wise mask for segmentation(structured output); it can also deal with input of variable size;
 - Separable kernel can help make convolution operation faster by decompose it into d separate 1-d kernel;
 - Reduce the cost of CNN training: initialize randomly; design by hand; with unsupervised criterion;
+- Neurosicientific for CNN: V1 - primary visual cortex 
+  - V1 is designed in a spatial map;
+  - V1 has many simple cells;
+  - V1 has complex cells which detect features invariant to small shifts, that inspires the pooling layer and maxout network;
+- IT proves to be similar to CNN when firing rates are limited to the first 100ms of mostly feedforward activation;
+- Mamalian vision system: fovea combined with saccades; work with other senses like hearing or moods; human do more than just object recognition; V1 are heavily affected by feedback from hihger levels; 
+- Neuroscience doesn't tell us how to train CNNs
+- Gabor functions that the V1 cells has learned as visualized by reverse correlation;
