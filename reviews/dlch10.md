@@ -1,1 +1,12 @@
 Chapter 10 - Sequence Modeling: Recurrent and Recursive Nets
+- Unfolding Computational Graph to yied expression that does not involve recurrence;
+- RNN types: with hidden-to-hidden connection; with output to hidden connection; with hidden-to-hidden connection but reads an entire sequence for later use; train with BPTT;
+- Teacher forcing: with output-to-hidden connection; open-loop mode problem;
+- Backpropagation Through Time: see example on Page 374; dummy variable W^(t)-delta W_t-treated as contribution of weights at time step t to the gradients;
+- Directed Graphical Models analogy: incorporate hidden unit h as random variables although they are deterministic; parameter sharing between time steps; sampling from conditional distribution-dealing with sequence length: special symbol, Bernoulli output, add an output to predict the length tau;
+- With fixed size input x
+  - as an extra input at each time step;
+  - as the initial state h^0;
+  - both
+- Bidirectional RNNs: rely on both previous and future states;
+- Encoder-decoder Sequence-to-Sequence architecture: encoder emits context C which is a function of the final hidden state; decoder is conditioned on this C to generate output sequence;
