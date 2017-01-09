@@ -1,2 +1,13 @@
 Chapter 12 - Applications
-- 
+- Large-Scale Deep Learning: fast CPU implementation (fixed-point arithmetic); GPU implementation - parallel, independent, high memory width, general purpose GPUs; Distributed Implementation (ASGD); Model compression; Dynamic structure - conditional computation, cascade, gater & expert networks( mixture of experts); Specialized Hardware Implementation - with less bits of precision at least at inference time
+- Computer Vision
+  - Preprocessing: rescale in the same range; Global Contrast Normalization & LCN; shering & whitening; Data Augmentation; 
+- Speech Recognition: previous is based on HMM & GMM
+- Natural Language Processing
+  - n-grams: smoothing, back-off methods for lower order n-gram, class-based language model;
+  - Neural Language Models: distributed representation of words (word embedding!!)
+  - High-Dimensional Outputs: with high vocabulary size, the computation takes lots of time; short list with L and Tail; Hierarchical Softmax with balanced tree, then using chain rule; Importance Sampling - negative phase is expectation, weights sampled from proposal distribution with bias corrected; Ranking Loss; Combine Neural Language Models with n-grams - ensemble;
+  - Neural Machine Translation: encoder-decoder; attention mechanism; pieces of data alignment;
+- Other Appications
+  - Recommender Systems: collaborative filtering - bilinear prediction; RBM undirected probablistic models; content-based recommender; Exploration vs. Exploitation in reinforcement learning;
+  - Knowledge representation, Reasoning and Question Answering: relation embedding; link prediction (predicting new knowledge); word-sense disambiguation;
