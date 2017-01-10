@@ -1,0 +1,16 @@
+Chapter 14 - Autoencoders
+- Copy input to output with a hidden layer h, h = f(x), r = g(h), final goal is x = g(f(x)), can also be generalized to stochastic mappings with probability configuration, besides traditional backprop, it can also trained with recirculation;
+- Undercomplete Autoencoders: a smaller size of h, when decoder is linear and L is MSE it's equivalent to PCA; if with nonlinear mappings, with more powerful generalization of PCA but without extracting useful information;
+- Regularized Autoencoders: overcomplete
+	- Sparse Autoencoders: sparsity penalty on h; regularizer term added or treated as MLE with latent variables, which is intractable; so approximate instead with MAP (point estimation);
+	- Denoising Autoencoders: input with corrupted data, output with the original datapoint;
+	- Contractive Autoencoders: penalty on derivatives;
+- Representation with depth and width;
+- Stochastic Encoder and Decoder: 
+- Denoising: sample x from training data; sample corrupted x' from corrupting process; training...;
+	- Estimating the Score: score is the gradient field delta_x \log p(x); it learns a vector field of g(f(x)) - x that can estimate the score of the data distribution;(not quite understood)
+- Learning Manifolds with Autoencoders: tangent planes, where with infinitesimally change of x, it stays on the manifold; two forces: sampling under data-generating distribution and with constraints;
+	- nonparametric methods based on Nearest Neighbor Graph, with enough examples we can get the manifold plane;
+- Contractive AE: Jacobian's norm is constrained; reconstruction error encourages to learn identity function while contractive penalty pushes to learn features that are constant w.r.t. x; impose some scale on the decoder;
+- Predictive Sparse Decomposition: minimization w.r.t. h and model parameters; example of learned approximate inference;
+- Applications of AE: dimension reduction and information retrieval with binary coding;
