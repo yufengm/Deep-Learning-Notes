@@ -17,3 +17,4 @@ Notes of Deep Learning Book
 - Chapter 11: Practical Methodology [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch11.md)]
 - Chapter 12: Applications [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch12.md)]
 - Chapter 13: Linear Factor Models [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch13.md)]
+- Chapter 14: Autoencoders [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch14.md)]
