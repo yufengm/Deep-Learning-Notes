@@ -6,6 +6,8 @@ Summary of Papers on Deep Learning
   - Jiasen Lu, Caiming Xiong, Devi Parikh, Richard Socher, ArXiv, 2016
 - Hierarchical Question-Image Co-Attention for Visual Question Answering [[Paper](https://arxiv.org/abs/1606.00061)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/lu2016hierarchical.md)]
   - Jiasen Lu, Jianwei Yang, Dhruv Batra, Devi Parikh, NIPS, 2016
+- Stochastic Multiple Choice Learning for Training Diverse Deep Ensembles [[Paper](https://arxiv.org/abs/1606.07839)][[Review](https://github.com/yufengm/Papers/blob/master/reviews/lee2016stochastic.md)]
+  - Stefan Lee, Senthil Purushwalkam, Michael Cogswell, Viresh Ranjan, David Crandall, Dhruv Batra, NIPS, 2016
 
 Notes of Deep Learning Book
 
