@@ -1,1 +1,12 @@
 Chapter 15 - Representation Learning
+- Greedy Layer-Wise Unsupervised Pretraining: trained pieces of solutions inddependently and each piece corresponds to each layer of the network; initialization benefits from regularizing effect out of unsupervised learning, learning useful information; disadvantadges compared to traditional regularizer like controling the strength, two stages each with its own hyperparameters;
+- Transfer Learning and Domain Adaptation
+  - Transfer learning: using what has been learned in one setting to improve generalization in another setting; 
+  - Domain adaptation: input distribution is slightly different while the top level task is the same;
+  - Concept drift: transfer learning with gradual changes in data distribution over time;
+  - One-shot and zero-shot learning: zero-shot learning may needs some additional random variable describing the task T;
+  - Multimodal learning;
+- Semi-supervised learning for causal factors: representation corresponds to underlying causes of the observed data; bayes rule explanation between cause and effect; (Not quite understood, treat y as prior and x as evidence?)
+- Distributed Representation: vs Symbolic representation; lead to generalization; traditional nondistributed learning algorithm generalize only due to smoothness assumption but suffer from curse dimensionality; capacity remains limited despite encoding powerfulness;
+- Benifits from Depth: exponential gain from depth;
+- How to discover underlying Causes: smoothness; linearity; multiple explanatory factors; Causal factors; Depth benefits; Shared factors for different tasks; Manifolds concentration; Natural clustering; Temperal or spatial coherence; Sparsity; Simplicity of factor dependencies;
