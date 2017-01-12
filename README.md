@@ -21,3 +21,4 @@ Notes of Deep Learning Book
 - Chapter 13: Linear Factor Models [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch13.md)]
 - Chapter 14: Autoencoders [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch14.md)]
 - Chapter 15: Representation Learning [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch15.md)]
+- Chapter 16: Structured Probabilistic Models for Deep Learning [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch16.md)]
