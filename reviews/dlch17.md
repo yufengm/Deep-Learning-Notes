@@ -8,4 +8,5 @@ Chapter 17 - Monte Carlo Methods
 - Challenges: difficult to mix between separated modes like the EBM example in P592; In deep models, learning p(x|h) and p(h|x) are at odds with each other;
   - Tempering with exp(-\beta E(x));
   - Add more depth to help mixing;
+  
 Notes: needs to really understand the sampling mechanism, especially for Gibbs Sampling
