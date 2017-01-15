@@ -26,5 +26,5 @@ This paper introduced the co-attention model based hierarchical question embeddi
 - Ablation study is also an important concept for future reseach;
 
 ## Weaknesses/Notes
-- Some misleading equation expressions like in equation (4), the dimensions between factor matrices are not compatible;
-- Also in this section, they only provide result saying that performance is improved but without why behind? Any principle or design science behind?
+- Some misleading equation expressions like in equation (4), the dimensions between factor matrices are not compatible; (Confirmed as typo)
+- Also in this section, they only provide result saying that performance is improved but without why behind? Any principle or design science behind? (Explanation from the author: each element of C come from the dot product of two vectors. this operation is extremely hard to train, since the gradient of the 2 vector is come from the single value. If we simply max pool the C, we only rely on this operation to train the network. Then it’s extremely hard to converge. In our method, we treat C as an bridge, to transform W_q * Q to the same dimension as W_v * V. This can be seen as the skip connection, which provide further signal for the gradient. )
