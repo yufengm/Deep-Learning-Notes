@@ -8,7 +8,7 @@ Typically, single prediction rarely exists in practical modern systems. The pred
 - Model
   - L_o(D) = \sum_{i=1}^n \min_{m\in [M]} l(y_i, f_m(x_i)) - oracle loss function over the whole dataset D;
   - Minimization: introducing k-means like strategy for hard-assignment of whether the ensemble has the lowest error on example i; Reference [8] applied coordinate descent, i.e., k-means like of hard-EM for optimizatio, which alternates between assigning examples to the min-loss and convergence of partition of examples. This methodology is not feasible for deep networks as single model takes weeks to train;
-  - \frac{L_o}{f_m(x_i)} = p_{i,m}\frac{l(y_i, f_m(x_i))}{f_m{x_i}}, which p_{i,m} only equals to 1 when f_m is the min error predictor. In that case, we can just step forward as training a single model
+  - \frac{L_o}{f_m(x_i)} = p_{i,m}\frac{l(y_i, f_m(x_i))}{f_m{x_i}}, in which p_{i,m} only equals to 1 when f_m is the min error predictor. In that case, we can just step forward as training a single model
 - Dataset
   - CIFAR-10 for Image Classification
   - Pascal VOC dataset for Semantic Segmentation
