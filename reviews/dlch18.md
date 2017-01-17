@@ -1,2 +1,16 @@
 Chapter 18 - Confronting the Partition Function
-- 
+- Log-likelihood Gradient: positive and negative phase of learning to interpret Equ.~18.4; We can further express the gradient w.r.t. Z in negative phase as an expectation, in which Monte Carlo methods can be applied for approximation; In dl community, common to parametrize log \tilde{p} in terms of energy function;
+- Stochastic Maximum Likelihood and Contrastive Divergence: Algo. 18.1 as naive MCMC for MLE; positive and negative phase explained as real events while awake and hallucinations while sleeping (intuitive!);
+  - Dealing with burning in cost in Markov chains: initialize with samples from the minibatch as presented in Algo.~18.2; although the data distribution is not close to the model at the beginning, positive phase learning can push to accurately increase model's probability of data, which in return will make the model distribution be closer to the data distribution; Fails to suppress regions of high probability that are far from the data distribtuion, called as spurious modes;
+  - Initialize Markov Chains in gradient step with states from previous gradient step (SML): vulnerable to become inaccurate if SGD moves faster than Markov chain mixing; Fast PCD with slow and fast copy of parameters, in which faster parameters are trained with high learning rate;
+  - The above two can deal with bound-based positive phase methods;
+- Psedolikelihood: partition function can cancel in ratios; simply move c into b to reduce computational cost - p(x_i | x_{-1}); Generalized version of psedolikelihood; Performs poorly on tasks requiring full joint p(x); not compatible with methods involving lower bound of positive phase;
+- Score matching and Ratio Matching: \delta_x \log p(x) is treated as score, which tries to minimize the expected squared difference between model's score and data's score; as there the score is w.r.t. data instead of parameters, d\log Z / dx = 0;
+  - Ratio matching for discrete binary data with Equ.~18.26.
+- Denoising Score Matching: with smoothed version of data distribution, corruption process in incorporated;
+- Noise-Contrastive Estimation: treat partition function as a parameter c; include noise distribution p_noise (x), learning joint distribution via a supervised learning mechanism; idea for the construction of GANs;
+- Estimating the Partition Function directly: comparison of models needs to compute the ratio of partition functions; use a proposal distribution p_0(x), which supports tractable sampling and evaluation;
+  - Annealed Importance Sampling: a sequence of intermediate distributions starting from p_0 and ends with target p_1; construct the sequence by weighted geometric average of p1 and p0; MC for building transition functions; Sampling from p_0 and these transition distributions to approximate the ratios; it's just simple importance sampling applied on extended state space;
+  - Bridge Sampling: Equ.~18.62; if p_* has large overlap of support with both p_0 amd p_1;
+    - Linked importance sampling;
+    - Combination of bridge sampling, short-chain AIS and parallel tempering to estimate partition function while training;
