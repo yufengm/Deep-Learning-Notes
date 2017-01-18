@@ -15,5 +15,5 @@ Chapter 19 - Approximate Inference
   - Continuous Latent Variables: with mean field assumption, q always has the form of 19.56, in which we can apply fixed-point equation; see example for how calculus of variations can be applied; again we see a form of Gaussian of p(h|v) without assuming its distribution type;
   - Interactions between Learning and Inference
 - Learned Approximate Inference: we may think of the multistep process as being function, then we can use a neural network to approximate f;
-  - Wake-sleep speculation: MC assumes that samples drawn from p(h,v) for dream sleep, while here samples are drawn from p(h,v);
-  
+  - Wake-sleep speculation: Inference network drawo both h and v from model distribution and infer p(h|v) through ancestral sampling and bayes rule; MC assumes that samples drawn from p(h|v) for dream sleep, while here samples are drawn from p(h,v);
+  - Other forms of Learned Inference: combination of inference network and mean field: one pass of inference network + one pass of mean field + inference network training; one of dominant approaches to generative modeling, like the variational autoencoder;
