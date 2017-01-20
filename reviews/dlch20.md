@@ -1,4 +1,3 @@
 Chapter 20 - Deep Generative Models
 - Boltzmann Machines: originally for binary vectors; energy based model p(x) = exp(-E(x))/Z, E(x) = -x^T U x - b^T x; Divide x into visible and hidden variables v and h, E(v,h) = -v^T R v - v^T W h - h^T S h - b^v - c^T h; learning rule is local just as axons and dendrites firing locally;
-- Restricted Boltzmann Machines: undirected connection with one hidden and one visible layer, E(v,h) = -b^T v - c^T h - v^T W h; p(h|v) and p(v|h) can be expressed explicitly; derivation of updating (see Hinton's practical guide([Practical Guide to RBM](http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf)) and my own[pic](https://github.com/yufengm/Papers/edit/master/reviews/rbm_derivation.jpg))
-- 
+- Restricted Boltzmann Machines: undirected connection with one hidden and one visible layer, E(v,h) = -b^T v - c^T h - v^T W h; p(h|v) and p(v|h) can be expressed explicitly; derivation of updating (see Hinton's practical guide([Practical Guide to RBM](http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf)) and my own[pic](https://github.com/yufengm/Papers/edit/master/reviews/rbm_derivation.jpg));
