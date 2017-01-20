@@ -25,3 +25,4 @@ Notes of Deep Learning Book
 - Chapter 17: Monte Carlo Methods [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch17.md)]
 - Chapter 18: Confronting the Partition Function [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch18.md)]
 - Chapter 19: Approximate Inference [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch19.md)]
+- Chapter 20: Deep Generative Models [[Review](https://github.com/yufengm/Papers/blob/master/reviews/dlch20.md)]
