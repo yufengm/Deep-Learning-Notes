@@ -5,6 +5,6 @@ Chapter 20 - Deep Generative Models
 - Deep Boltzmann Machine: entirely undirected model; within each layer, each variable is mutually conditionally independent; joint probability of visible and latent variables is defined in 20.24; still bipartite structure;
   - Properties: lack of intralayer interactions - fixed-point equation;
   - DBM Mean Field Inference: minimize KL(Q||P); in binary hidden units version: get 20.33~34 for iterative fixed-point equation updates;
-  - DBM Parameter Learning: see details in [[pic](https://github.com/yufengm/Papers/edit/master/reviews/dbm_update_derivation.jpg)]
+  - DBM Parameter Learning: see details in [[pic](https://github.com/yufengm/Papers/edit/master/reviews/dbm_training_update_derivation.jpg)]
   - Layer-wise pretraining: random initialization usually results in failure; each layer is trained in isolation as a RBM, after all is trained, DBM is jointly trained with all layers via PCD; not quite understand the two copy explanation in P662;
   - Jointly Training DBM: centered deep BM, replace x with x - \mu, in which x \approx \mu with initialization, Hessian matrix is better conditioned; Multi-prediction DBM, mean field equations as a family of RNN solving inference problem with predic missing values in data, allowing back-propagation directly in DBM as compared to approximation in SML, which can result in more accurate classifier on its own; relationship with dropout, in MP-DBM, unobserved unit in visible variables is treated as latent ones;
