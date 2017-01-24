@@ -8,3 +8,12 @@ Chapter 20 - Deep Generative Models
   - DBM Parameter Learning: see details in [[pic](https://github.com/yufengm/Papers/edit/master/reviews/dbm_training_update_derivation.jpg)]
   - Layer-wise pretraining: random initialization usually results in failure; each layer is trained in isolation as a RBM, after all is trained, DBM is jointly trained with all layers via PCD; not quite understand the two copy explanation in P662;
   - Jointly Training DBM: centered deep BM, replace x with x - \mu, in which x \approx \mu with initialization, Hessian matrix is better conditioned; Multi-prediction DBM, mean field equations as a family of RNN solving inference problem with predic missing values in data, allowing back-propagation directly in DBM as compared to approximation in SML, which can result in more accurate classifier on its own; relationship with dropout, in MP-DBM, unobserved unit in visible variables is treated as latent ones;
+- Boltzmann Machines for Real-Valued Data: common methods-treat real value in interval [0,1] as expectation of binary values
+  - Gaussian-Bernoulli RBMs: binary hidden and real-value visible units; visible's mean is a function of hidden units; Equa. 20.38; Derivation of p(h_i=1|v) similar as in 20.7; Energy function as Equation. 20.42;
+  - Handling Conditional Covariance
+    - Mean and Covariance RBM, mean units and covariance units, combination of two energy functions, difficult to train with CD or PCD as inverse structure of covariance matrix, Hamiltonian Monte Carlo methods; 
+    - mPoT: Gaussian-Bernoulli energy function + conditionally independent Gamma distributions as like 20.48, training with Hamiltonian Monte Carlo;
+    - ssRBMs: binary spike units h and real-valued slab units s; some settings may cause a covariance matrix that is not positive definite; allows for higher-order interactions;
+- Convolutional Boltzmann Machines: probabilistic max pooling, the detector units at most one may be active at a time with only n+1 states; hard to deal with different spatial sizes of pooling;
+- BM for Structured or Sequential Outputs: structured outputs and sequence modeling; PGM of character's movement; RNN-RBM for song composition, in which RNN emits parameters for each time step;
+- Other Boltzmann Machines: extended with different training criteria besides log p(v); higher order BM;
