@@ -31,4 +31,3 @@ Quite new idea of training a generative model to fit the data generation distrib
 
 ## Weaknesses/Notes
   - Interpretation is lacking for generative networks. As mentioned in conclusion and future work, can we use p(x|c), i.e. c, to guide the learning. Or use learned approximate inference to explain the hidden units;
-  - 
