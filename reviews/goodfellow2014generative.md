@@ -4,6 +4,12 @@ Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
 
 ## Summary
 
+- Model
+
+- Dataset
+
+- Experiments
+
 ## Strengths
 
 ## Weaknesses/Notes
