@@ -31,3 +31,20 @@ Quite new idea of training a generative model to fit the data generation distrib
 
 ## Weaknesses/Notes
   - Interpretation is lacking for generative networks. As mentioned in conclusion and future work, can we use p(x|c), i.e. c, to guide the learning. Or use learned approximate inference to explain the hidden units;
+  
+## Notes from NIPS 2016 GAN tutorial [[TechReport](https://arxiv.org/abs/1701.00160)]
+  - Taxonomy of deep generative models like explicity and implicit density models
+  - As of late 2016, simultaneous gradient descent with one step for each player
+  - MLE game interpretation of GAN
+  - JSD cost function IS NOT the distinguishable features for GAN, which choose to generate a small number of modes
+  - Non-saturating heuristics gives low variance of cost function with high gradients being from fake samples
+  - Training with labels can produce samples of higher quality; One-sided lable smoothing for extreme probabilities
+  - Reference batch normalization and virtual batch normalization for mitigating correlation problems between samples
+  - Balance between G and D: encourage D to be optimized first as theoretical proof for convergence
+  - Mode collapse originates from the gap between min max and max min
+  - Minibatch features approach to deal with mode collapse problem, but results in counting, perspective and global structure problems
+  - unrolled GAN: backpropagation through the maximization operation, k steps of learning in D(x), backpropagate through all k steps of learning when updating G(z)
+  - It's hard to evaluate generative models
+  - For discrete outputs: training samples of continuous values that can be decoded to discrete ones, like word embeddings;
+  - Semi-supervised learning: feature matching GANs, turning a classification of n classes into n+1 classes
+  - Application of latent code z for producing the images, but hard to infer P(z|x) as it's implicit density; we may need another network to approximate it; InfoGAN trained the code z to be more useful by high mutual information between z and x
