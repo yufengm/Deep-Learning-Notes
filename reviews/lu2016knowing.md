@@ -22,7 +22,7 @@ This paper introduces an adaptive attention based image captioning model. They e
   - Adam optimizer, finetune CNN after 20 epochs using early stopping
   - Beam search of size 3 when sampling captions
   
-## Strengthes
+## Strengths
 
 - Besides normally where to look at with visual attention, when to look is also important when the visual sentinel is introduced here.
 - LSTM extension with visual sentinel embedding(extend LSTM when required)
