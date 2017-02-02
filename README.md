@@ -10,6 +10,8 @@ Summary of Papers on Deep Learning
   - Stefan Lee, Senthil Purushwalkam, Michael Cogswell, Viresh Ranjan, David Crandall, Dhruv Batra, NIPS, 2016
 - Generative Adversarial Nets [[Paper](https://arxiv.org/abs/1406.2661)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/goodfellow2014generative.md)]
   - Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio, NIPS, 2014
+- StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks [[Paper](https://arxiv.org/abs/1612.03242)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/zhang2016stackgan.md)]
+  - Han Zhang, Tao Xu, Hongsheng Li, Shaoting Zhang, Xiaolei Huang, Xiaogang Wang, Dimitris Metaxas, ArXiv, 2016
 
 Notes of Deep Learning Book
 
