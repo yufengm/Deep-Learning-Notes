@@ -13,7 +13,6 @@ Synthesis of photo-realistic images from text descriptions. Stacked Generative A
     - Text encoding is reshaped again through a MLP to concatenate with image features in the discriminator network;
     - To avoid overfitting and enforce smoothness, D_KL of N(mu, sigma) and N(0,1) is added as a regularization term;
     - Do min max training through the standard GAN training strategy;
-  
   - Stage-II
     - Another MLP is trained to produce different mean and variance for latent codes of the second stage generator, as it may capture useful information omitted in the first stage;
     - Matching-aware discriminator is applied to enforce better alignment between image and the conditioning texts;
