@@ -7,17 +7,16 @@ Han Zhang, Tao Xu, Hongsheng Li, Shaoting Zhang, Xiaolei Huang, Xiaogang Wang, D
 Synthesis of photo-realistic images from text descriptions. Stacked Generative Adversarial Network is proposed to manage the generation of images in two stages. The first GAN conditioned on text descriptions is used to construct rough/coarse shape and basic colors images with low resolution. Then based on the first stage's sample and feeding the text encoding again, the second stage GAN will refine the details and rectify the defects in generated samples from the first stage.
 
 - Model
-
-Stage-I
-  - Text embedding from pretrained encoder, which high dimensional and may cause discontinuality in latent data manifold learning; This is mitigated by conditioning augmentation, in which two MLPs are trained to learn Gaussian mean and convariance. In this way, robustness to small perturbations is encouraged, which is implemented through Random Operation via manipulation on N(0,1);
-  - Latent code c generated from augmentation is concatenated with a noise vector as input for the generator;
-  - Text encoding is reshaped again through a MLP to concatenate with image features in the discriminator network;
-  - To avoid overfitting and enforce smoothness, D_KL of N(mu, sigma) and N(0,1) is added as a regularization term;
-  - Do min max training through the standard GAN training strategy;
+  -Stage-I
+    - Text embedding from pretrained encoder, which high dimensional and may cause discontinuality in latent data manifold learning; This is mitigated by conditioning augmentation, in which two MLPs are trained to learn Gaussian mean and convariance. In this way, robustness to small perturbations is encouraged, which is implemented through Random Operation via manipulation on N(0,1);
+    - Latent code c generated from augmentation is concatenated with a noise vector as input for the generator;
+    - Text encoding is reshaped again through a MLP to concatenate with image features in the discriminator network;
+    - To avoid overfitting and enforce smoothness, D_KL of N(mu, sigma) and N(0,1) is added as a regularization term;
+    - Do min max training through the standard GAN training strategy;
   
-Stage-II
-  - Another MLP is trained to produce different mean and variance for latent codes of the second stage generator, as it may capture useful information omitted in the first stage;
-  - Matching-aware discriminator is applied to enforce better alignment between image and the conditioning texts;
+  - Stage-II
+    - Another MLP is trained to produce different mean and variance for latent codes of the second stage generator, as it may capture useful information omitted in the first stage;
+    - Matching-aware discriminator is applied to enforce better alignment between image and the conditioning texts;
 
 - Dataset
   - Caltech-UCSD Bird, 200 bird species with 11788 images
