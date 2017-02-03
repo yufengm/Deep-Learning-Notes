@@ -12,6 +12,8 @@ Summary of Papers on Deep Learning
   - Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio, NIPS, 2014
 - StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks [[Paper](https://arxiv.org/abs/1612.03242)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/zhang2016stackgan.md)]
   - Han Zhang, Tao Xu, Hongsheng Li, Shaoting Zhang, Xiaolei Huang, Xiaogang Wang, Dimitris Metaxas, ArXiv, 2016
+- Wasserstein GAN [[Paper](https://arxiv.org/abs/1701.07875)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/arjovsky2017wasserstein.md)]
+  - Martin Arjovsky, Soumith Chintala, Léon Bottou, ArXiv, 2017
 
 Notes of Deep Learning Book
 
