@@ -16,6 +16,8 @@ Summary of Papers on Deep Learning
   - Martin Arjovsky, Soumith Chintala, Léon Bottou, ArXiv, 2017
 - Plug & Play Generative Networks: Conditional Iterative Generation of Images in Latent Space [[Paper](https://arxiv.org/abs/1612.00005)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/nguyen2016plug.md)]
   - Anh Nguyen, Jason Yosinski, Yoshua Bengio, Alexey Dosovitskiy, Jeff Clune, ArXiv, 2016
+- Label-Free Supervision of Neural Networks with Physics and Domain Knowledge
+  - Russell Stewart, Stefano Ermon, AAAI, 2017, Outstanding paper award
 
 Notes of Deep Learning Book
 
