@@ -21,7 +21,6 @@ Deep neural networks with supervised learning has achieved great success with la
 
 ## Strengths
   - Great extension from standard supervised learning of neural networks to constraint learning, and showed some sufficiency analysis for convergence research;
-  - 
 
 ## Weaknesses/Notes
   - Kind of weak for mathematical analysis of necessity and sufficiency for convergence;
