@@ -18,6 +18,8 @@ Summary of Papers on Deep Learning
   - Anh Nguyen, Jason Yosinski, Yoshua Bengio, Alexey Dosovitskiy, Jeff Clune, ArXiv, 2016
 - Label-Free Supervision of Neural Networks with Physics and Domain Knowledge [[Paper](https://arxiv.org/abs/1609.05566)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/stewart2016label.md)]
   - Russell Stewart, Stefano Ermon, AAAI, 2017, Outstanding paper award
+- Adversarial Learning for Neural Dialogue Generation [[Paper](https://arxiv.org/abs/1701.06547)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/li2017adversarial.md)]
+  - Jiwei Li, Will Monroe, Tianlin Shi, Alan Ritter, Dan Jurafsky, ArXiv, 2016
 
 Notes of Deep Learning Book
 
