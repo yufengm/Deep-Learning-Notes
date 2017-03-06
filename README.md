@@ -18,6 +18,8 @@ Summary of Papers on Deep Learning
   - Anh Nguyen, Jason Yosinski, Yoshua Bengio, Alexey Dosovitskiy, Jeff Clune, ArXiv, 2016
 - Label-Free Supervision of Neural Networks with Physics and Domain Knowledge [[Paper](https://arxiv.org/abs/1609.05566)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/stewart2016label.md)]
   - Russell Stewart, Stefano Ermon, AAAI, 2017, Outstanding paper award
+- Quasi-Recurrent Neural Networks [[Paper](https://openreview.net/forum?id=H1zJ-v5xl&noteId=H1zJ-v5xl)][[Review](https://github.com/yufengm/Papers/blob/master/reviews/bradbury2016quasi.md)]
+  - James Bradbury, Stephen Merity, Caiming Xiong, Richard Socher, ICLR, 2017
 
 Notes of Deep Learning Book
 
