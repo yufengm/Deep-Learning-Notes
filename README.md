@@ -20,6 +20,8 @@ Summary of Papers on Deep Learning
   - Russell Stewart, Stefano Ermon, AAAI, 2017, Outstanding paper award
 - Quasi-Recurrent Neural Networks [[Paper](https://openreview.net/forum?id=H1zJ-v5xl&noteId=H1zJ-v5xl)][[Review](https://github.com/yufengm/Papers/blob/master/reviews/bradbury2016quasi.md)]
   - James Bradbury, Stephen Merity, Caiming Xiong, Richard Socher, ICLR, 2017
+- Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models [[Paper](https://arxiv.org/abs/1702.03275)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/ioffe2017batch.md)]
+  - Sergey Ioffe, ArXiv, 2017
 
 Notes of Deep Learning Book
 
