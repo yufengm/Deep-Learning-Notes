@@ -22,6 +22,7 @@ Summary of Papers on Deep Learning
   - James Bradbury, Stephen Merity, Caiming Xiong, Richard Socher, ICLR, 2017
 - Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models [[Paper](https://arxiv.org/abs/1702.03275)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/ioffe2017batch.md)]
   - Sergey Ioffe, ArXiv, 2017
+- My Overview of Deep Learning for NLP [[Review](https://github.com/yufengm/Papers/blob/master/reviews/Deep Learning for NLP.pdf)]
 
 Notes of Deep Learning Book
 
