@@ -2,7 +2,7 @@ Summary of Papers on Deep Learning
 
 2017-04
 
-2017
+Before 2017-03 
 
 - Knowing When to Look: Adaptive Attention via A Visual Sentinel for Image Captioning [[Paper](https://arxiv.org/abs/1612.01887)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/lu2016knowing.md)]
   - Jiasen Lu, Caiming Xiong, Devi Parikh, Richard Socher, CVPR, 2017
