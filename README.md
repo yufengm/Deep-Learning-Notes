@@ -1,6 +1,6 @@
 Summary of Papers on Deep Learning
 
-2017 - 04
+2017-04
 
 2017
 
