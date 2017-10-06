@@ -1,5 +1,6 @@
 Summary of Papers on Deep Learning
-
+- Understanding Black-box Predictions via Influence Functions [[Paper](https://arxiv.org/abs/1703.04730)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/icml2017.md)]
+  - Pang Wei Koh, Percy Liang, ICML, 2017, Best paper award
 - Knowing When to Look: Adaptive Attention via A Visual Sentinel for Image Captioning [[Paper](https://arxiv.org/abs/1612.01887)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/lu2016knowing.md)]
   - Jiasen Lu, Caiming Xiong, Devi Parikh, Richard Socher, CVPR, 2017
 - Hierarchical Question-Image Co-Attention for Visual Question Answering [[Paper](https://arxiv.org/abs/1606.00061)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/lu2016hierarchical.md)]
