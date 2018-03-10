@@ -1,4 +1,6 @@
 Summary of Papers on Deep Learning
+- Two Novel Seq2Seq Architectures: ConvS2S [[Paper](https://arxiv.org/pdf/1705.03122.pdf)]], Transfomer [[Paper](https://arxiv.org/abs/1706.03762)]], [[Review](https://github.com/yufengm/Papers/blob/master/reviews/seq2seq.pdf)]]
+
 - Understanding Black-box Predictions via Influence Functions [[Paper](https://arxiv.org/abs/1703.04730)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/ICML2017.pdf)]
   - Pang Wei Koh, Percy Liang, ICML, 2017, Best paper award
 - Knowing When to Look: Adaptive Attention via A Visual Sentinel for Image Captioning [[Paper](https://arxiv.org/abs/1612.01887)] [[Review](https://github.com/yufengm/Papers/blob/master/reviews/lu2016knowing.md)]
